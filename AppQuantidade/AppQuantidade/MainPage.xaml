@@ -5,12 +5,16 @@
 
     <!--Layout-->
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="50">
-        <Label Text="Quantidade" FontSize="20" HorizontalTextAlignment="Center"/>
-        <Label Text="1" FontSize="48" TextColor="Red" HorizontalTextAlignment="Center"/>
+        <Label Text="Quantidade" FontSize="26" HorizontalTextAlignment="Center"/>
+        <Label x:Name="lblAmount" Text="1" FontSize="48" TextColor="Red" HorizontalTextAlignment="Center"/>
 
         <StackLayout Orientation="Horizontal" Spacing="40">
-            <Button Text="+" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="White" WidthRequest="90" HeightRequest="90"/>
-            <Button Text="-" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="White" WidthRequest="90" HeightRequest="90"/>
+            <Button Text="+" 
+                FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                Clicked="Increase"/>
+            <Button Text="-" 
+                FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="White" WidthRequest="100" HeightRequest="100"
+                Clicked="Decrease"/>
         </StackLayout>
     </StackLayout>
 
